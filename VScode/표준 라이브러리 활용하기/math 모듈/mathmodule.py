@@ -1,0 +1,12 @@
+import math
+print('파이 상수')
+print('math.pi :',math.pi)
+print()
+print('e상수')
+print('math.e:',math.e)
+print()
+print('올림 -3.5의 올림')
+print('math.ceil(3.5) : ', math.floor(3.5))
+print()
+print('내림 -3.5의 내림')
+print()
