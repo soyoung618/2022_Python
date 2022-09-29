@@ -9,11 +9,15 @@ for i in range(0,3):
 
     print(origin[i],end= " ")
 print()
+cnt=0
+while True:
+    #user 데이터 입력
+    my_data=[0,0,0]
 
-#user 데이터 입력
-my_data=[0,0,0]
-for i in range(0,3):
-    my_data[i]=int(input())
+    my_data=input(f"{cnt},숫자를 입력 하세요.").split(" ")
+    my_data=list(map(int,my_data))
+    #print(my_data)
+    cnt=cnt+1
 
 #판정
 #strike
@@ -32,4 +36,10 @@ for i in range(0,3):    #origin 방 번호
                 ball=ball=1
 
 print(ball,"ball")
+
+if(strike==3):
+    print(f"축하합니다. {cnt}회 만에 맞추었습니다.")
+elif(cnt==10):
+    print()
+    
 
